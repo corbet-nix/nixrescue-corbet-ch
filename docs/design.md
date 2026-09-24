@@ -173,7 +173,7 @@ headless-only. Which compositor to point it at stays the consumer's own
 choice; nothing about the module changed to let `examples/rescue` make one.
 
 `examples/rescue` makes that generic example choice through the same pointer:
-[nixscroll](https://github.com/julian-corbet/nixscroll-corbet-ch)'s `scroll`
+[nixscroll](https://github.com/corbet-nix/nixscroll-corbet-ch)'s `scroll`
 compositor plus a plain terminal (`foot`). The build-time size gate, rather
 than a production measurement copied into documentation, proves that the
 chosen example still fits its declared illustrative budget. The example

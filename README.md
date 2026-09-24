@@ -60,7 +60,7 @@ container.
 
 ```nix
 {
-  inputs.nixrescue.url = "github:julian-corbet/nixrescue-corbet-ch";
+  inputs.nixrescue.url = "github:corbet-nix/nixrescue-corbet-ch";
 }
 ```
 
@@ -158,7 +158,7 @@ squashfs+tmpfs overlay store arrangement a slot boots into, and a graphical sess
 builds it as `nixosConfigurations.rescue`, and `checks/rescue-image-fits-slot.nix` squashes its
 real closure with the module's exact `mksquashfs` invocation on every `nix flake check`, failing the
 build outright if it would not fit its declared slot. `nixrescue.gui.package` is wired here to
-[nixscroll](https://github.com/julian-corbet/nixscroll-corbet-ch)'s `scroll` compositor, plus a
+[nixscroll](https://github.com/corbet-nix/nixscroll-corbet-ch)'s `scroll` compositor, plus a
 plain `foot` terminal for it to spawn — this project's own module still never picks a compositor
 itself (see `modules/nixrescue.nix`'s own option doc); only this example does, and it fills no
 other role (no bar, no notifier, no file manager, no polkit agent, no audio). See

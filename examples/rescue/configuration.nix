@@ -32,7 +32,7 @@
     authorizedKeys = [ ];
     ssh.enable = false;
 
-    # THE COMPOSITOR: nixscroll's `scroll` (github:julian-corbet/nixscroll-corbet-ch), through
+    # THE COMPOSITOR: nixscroll's `scroll` (github:corbet-nix/nixscroll-corbet-ch), through
     # this project's own module-level pointer -- no second option added, per this module's own
     # SCOPE comment ("null means headless-only... a GUI slots in later through this exact same
     # pointer, unchanged"). The pick is nixscroll's own size: 440.9 MiB alone, 513 MiB unioned

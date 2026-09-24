@@ -10,7 +10,7 @@
     # for it. A consumer of nixrescue.nixosModules.default never needs to follow this input
     # themselves; the module takes `pkgs` from whatever evaluation composes it and never
     # references nixfs directly.
-    nixfs.url = "github:julian-corbet/nixfs-corbet-ch";
+    nixfs.url = "github:corbet-nix/nixfs-corbet-ch";
     nixfs.inputs.nixpkgs.follows = "nixpkgs";
 
     # Used by `checks` only, to build the second UKI the real UEFI-boot VM
@@ -22,7 +22,7 @@
     # boundary as nixfs above: a consumer of the runtime module never needs
     # this input. Building a release and reconciling it onto a host are
     # deliberately exposed as plain library functions instead.
-    nixboot.url = "github:julian-corbet/nixboot-corbet-ch";
+    nixboot.url = "github:corbet-nix/nixboot-corbet-ch";
     nixboot.inputs.nixpkgs.follows = "nixpkgs";
 
     # `examples/rescue`'s graphical session. Measures small (see
@@ -32,7 +32,7 @@
     # `nixosModules.default` never needs this input either: `nixrescue.gui.package` is a bare
     # package pointer (see modules/nixrescue.nix), and this repo's own module names no compositor
     # -- only the EXAMPLE does, same as nixfs/nixboot above.
-    nixscroll.url = "github:julian-corbet/nixscroll-corbet-ch";
+    nixscroll.url = "github:corbet-nix/nixscroll-corbet-ch";
     nixscroll.inputs.nixpkgs.follows = "nixpkgs";
 
     # NOT an input: nixdesktop. The three-layer model this family's other desktop consumers use
